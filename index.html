@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            color: brown;
+        }
+        legend {
+            color: blue;
+        }
+    fieldset{
+        background-color: bisque;
+    }
+
+    button{
+        font-style: italic;
+        background: #eb94d0;
+    
+    }
+p{
+font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    </style>
+</head>
+<body>
+<h1>Calculadora sencilla</h1>
+
+<fieldset>
+    <form id="formulario" action="">
+
+        <legend>Es una caculadora sencilla</legend>
+        
+        <label for="digito1">Digito</label>
+        <input name="digito1" id="digito1" type="text" placeholder="dime un numero">
+        <br>
+        <label for="digito2">Digito</label>
+        <input name='digito2' id="digito2" type="text" placeholder="dime un numero">
+        <br>
+        <br>
+        <br>
+        <button type="button" onclick="suma(digito1,digito2)">Suma</button>
+        <button type="button" onclick="resta(digito1,digito2)">Resta</button>
+        <button type="button" onclick="division(digito1,digito2)">Divison</button>
+        <button type="button" onclick="multiplicar(digito1,digito2)">Multiplicar</button>
+        <br>
+        <p id="respuesta"></p>
+        
+    </form>
+</fieldset>
+
+    <script src="app.js"></script>
+</body>
+</html>
