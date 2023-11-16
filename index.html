@@ -4,28 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style>
-        h1{
-            text-align: center;
-            text-transform: uppercase;
-            color: brown;
-        }
-        legend {
-            color: blue;
-        }
-    fieldset{
-        background-color: bisque;
-    }
-
-    button{
-        font-style: italic;
-        background: #eb94d0;
-    
-    }
-p{
-font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1>Calculadora sencilla</h1>
@@ -52,6 +31,17 @@ font-family: Georgia, 'Times New Roman', Times, serif;
         
     </form>
 </fieldset>
+<button class="botonClick" id="botonClick">DAME CLICK</button>
+
+<div>
+    <label>Escribe algo</label>
+    <br>
+    <input type="text" class="inputTexto" placeholder="agrega texto">
+    <button class="botonAgregar">Agregar</button>
+    <br>
+    <textarea class="textoBox"></textarea>
+
+</div>
 
     <script src="app.js"></script>
 </body>
